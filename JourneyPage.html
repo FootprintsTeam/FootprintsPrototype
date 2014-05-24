@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->    
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/mycss.css" rel="stylesheet" />
 
@@ -21,7 +20,7 @@
 <body>
 
     <!--navbar area-->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default no-margin" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -76,49 +75,38 @@
     </nav>
 
     <!--Tab Content-->
-    <div id="tab-area" style="border: 0px 0px 0px 0px">
-        
+    <div id="tab-area" class="">
+
         <!--Map Content-->
-        <div class="container-fluid" id="map-area">
+        <div class="container-fluid no-padding" id="map-tab">
             <div class="row">
                 <div class="col-md-12">
-                    <div id="map-canvas" style="height:500px">
-
+                    <div id="map-canvas">
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
-    
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
-            type="text/javascript"></script>
+        <!--Media Content-->
+        <div class="container-fluid" id="media-tab">
+            <div class="row">
+                <div id="media-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <script type="text/javascript">
-        function initialize() {
-            var mapOptions = {
-                zoom: 8,
-                center: new google.maps.LatLng(-34.397, 150.644)
-            };
-
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-        }
-
-        function loadScript() {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-                'callback=initialize';
-            document.body.appendChild(script);
-        }
-
-        window.onload = loadScript;
-    </script>
+    <!--Google Maps API Plugin-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
+            type="text/javascript"></script>
+    <!--My javascript-->
+    <script type="text/javascript" src="Scripts/myscripts.js"></script>
 </body>
 </html>

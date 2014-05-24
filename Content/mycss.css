@@ -13,4 +13,23 @@
       margin-right: 0;
       margin-bottom:0;
     }
+
+
+}
+
+
+#map-canvas {
+    height:500px;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.no-padding {
+    padding: 0px 0px 0px 0px !important;
+}
+
+.no-margin {
+    margin: 0;
 }
