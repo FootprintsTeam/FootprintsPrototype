@@ -17,3 +17,10 @@ function loadScript() {
 }
 
 window.onload = loadScript;
+
+$(document).ready(function () {
+    jQuery("#media-container").nanoGallery({
+        kind: 'flickr',
+        userID: '99932419@N07'
+    });
+});
