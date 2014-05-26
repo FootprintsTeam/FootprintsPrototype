@@ -15,9 +15,9 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+      <![endif]-->
+  </head>
+  <body>
 
     <!--navbar area-->
     <nav class="navbar navbar-inverse no-margin" role="navigation">
@@ -79,6 +79,16 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="tabbable tabs-below">
+                    <div class="tab-content">
+                        <!--Map Content-->
+                        <div class="tab-pane active" id="map-tab">
+                            <div id="map-canvas"></div>
+                        </div>
+                        <!--Media Content-->
+                        <div class="tab-pane" id="media-tab">
+                            <div id="media-container"></div>
+                        </div>
+                    </div>
                     <!--tab nav bar-->
                     <div class="nav nav-tabs">
                         <ul class="nav nav-tabs">
@@ -86,19 +96,7 @@
                             <li><a href="#media-tab" data-toggle="tab">Media</a></li>
                         </ul>
                     </div>
-
                     <!--tab content-->
-                    <div class="tab-content">
-                        <!--Map Content-->
-                        <div class="tab-pane active" id="map-tab">
-                            <div id="map-canvas"></div>
-                        </div>
-
-                        <!--Media Content-->
-                        <div class="tab-pane" id="media-tab">
-                            <div id="media-container"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -140,7 +138,7 @@
     <script src="Scripts/bootstrap.js"></script>
     <!--Google Maps API Plugin-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
-            type="text/javascript"></script>
+    type="text/javascript"></script>
 
     <!-- Add Hammer.js plugin (OPTIONAL - this is only required for swipe support) -->
     <script type="text/javascript" src="Scripts/third.party/hammer.js/hammer.min.js"></script>
