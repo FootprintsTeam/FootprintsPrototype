@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->    
+    <!-- Bootstrap -->
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/mycss.css" rel="stylesheet" />
 
@@ -20,7 +20,7 @@
 <body>
 
     <!--navbar area-->
-    <nav class="navbar navbar-default no-margin" role="navigation">
+    <nav class="navbar navbar-inverse no-margin" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -74,47 +74,81 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <!--Tab Content-->
-    <div class="tabbable tabs-below">
-
-        <!--Map Content-->
-        <div class="container-fluid no-padding" id="map-tab">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="map-canvas">
+    <!--Tab Section-->
+    <div class="container-fluid no-padding">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tabbable tabs-below">
+                    <!--tab nav bar-->
+                    <div class="nav nav-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#map-tab" data-toggle="tab">Map</a></li>
+                            <li><a href="#media-tab" data-toggle="tab">Media</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
 
+                    <!--tab content-->
+                    <div class="tab-content">
+                        <!--Map Content-->
+                        <div class="tab-pane active" id="map-tab">
+                            <div id="map-canvas"></div>
+                        </div>
 
-        <!--Media Content-->
-        <div class="container-fluid" id="media-tab">
-            <div class="row">
-                <div id="media-container">
-
+                        <!--Media Content-->
+                        <div class="tab-pane" id="media-tab">
+                            <div id="media-container"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-    <!--Google Maps API Plugin-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
-            type="text/javascript"></script>
+    <!--Lower section-->
+    <div class="container-fluid" id="lower-section">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+                <div class="col-md-4">
+                    <img src="untitled.png" alt="avatar" class="img-responsive img-circle">
+                </div>
+                <div class="col-md-8">
+                    <h3><b>My name</b></h3>
+                    <h4>Journey name</h4>
+                    <p>description about my journey</p>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-offset-2">
+                <div class="col-md-3">
+                    <a>Share <span class="glyphicon glyphicon-share"></span></a>
+                </div>
+                <div class="col-md-3">
+                    <a>Follow <span class="glyphicon glyphicon-plus-sign"></span></a>
+                </div>
+                <div class="col-md-3">
+                    <a>Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                </div>
+                <div class="col-md-3">
+                    <a>Tags <span class="glyphicon glyphicon-tags"></span></a>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <!--Google Maps API Plugin-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
+                type="text/javascript"></script>
 
-    <!-- Add Hammer.js plugin (OPTIONAL - this is only required for swipe support) -->
-    <script type="text/javascript" src="Scripts/third.party/hammer.js/hammer.min.js"></script>
+        <!-- Add Hammer.js plugin (OPTIONAL - this is only required for swipe support) -->
+        <script type="text/javascript" src="Scripts/third.party/hammer.js/hammer.min.js"></script>
 
-    <!-- Add nanoGALLERY plugin files (MANDATORY) -->
-    <link href="Content/nanogallery.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="Scripts/jquery.nanogallery.js"></script>
+        <!-- Add nanoGALLERY plugin files (MANDATORY) -->
+        <link href="Content/nanogallery.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="Scripts/jquery.nanogallery.js"></script>
 
-    <!--My javascript-->
-    <script type="text/javascript" src="Scripts/myscripts.js"></script>
+        <!--My javascript-->
+        <script type="text/javascript" src="Scripts/myscripts.js"></script>
 </body>
 </html>
