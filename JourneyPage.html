@@ -16,8 +16,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-  </head>
-  <body>
+</head>
+<body>
 
     <!--navbar area-->
     <nav class="navbar navbar-inverse no-margin" role="navigation">
@@ -105,28 +105,32 @@
     <!--Lower section-->
     <div class="container-fluid" id="lower-section">
         <div class="row">
-            <div class="col-md-3 col-md-offset-2">
-                <div class="col-md-4">
-                    <img src="untitled.png" alt="avatar" class="img-responsive img-circle">
+            <div class="col-md-10" id="lower-section-container">
+                <div class="col-md-5 col-md-offset-2">
+                    <div class="col-md-7">
+                        <section id="avatar-section">
+                            <img src="untitled.png" alt="avatar" class="img-circle" width="120">
+                            <div id="right-text">
+                                <h3><b>My name</b></h3>
+                                <h4>Journey name</h4>
+                                <p>description about my journey</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <h3><b>My name</b></h3>
-                    <h4>Journey name</h4>
-                    <p>description about my journey</p>
-                </div>
-            </div>
-            <div class="col-md-5 col-md-offset-2">
-                <div class="col-md-3">
-                    <a>Share <span class="glyphicon glyphicon-share"></span></a>
-                </div>
-                <div class="col-md-3">
-                    <a>Follow <span class="glyphicon glyphicon-plus-sign"></span></a>
-                </div>
-                <div class="col-md-3">
-                    <a>Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
-                </div>
-                <div class="col-md-3">
-                    <a>Tags <span class="glyphicon glyphicon-tags"></span></a>
+                <div class="col-md-3 col-md-offset-2">
+                    <div class="col-md-3">
+                        <a>Share <span class="glyphicon glyphicon-share"></span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a>Follow <span class="glyphicon glyphicon-plus-sign"></span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a>Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a>Tags <span class="glyphicon glyphicon-tags"></span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,7 +142,7 @@
     <script src="Scripts/bootstrap.js"></script>
     <!--Google Maps API Plugin-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
-    type="text/javascript"></script>
+            type="text/javascript"></script>
 
     <!-- Add Hammer.js plugin (OPTIONAL - this is only required for swipe support) -->
     <script type="text/javascript" src="Scripts/third.party/hammer.js/hammer.min.js"></script>
