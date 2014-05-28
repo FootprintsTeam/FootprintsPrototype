@@ -18,9 +18,34 @@ function loadScript() {
 
 window.onload = loadScript;
 
-$(document).ready(function () {
+function loadImageLibrary() {
     jQuery("#media-container").nanoGallery({
         kind: 'flickr',
         userID: '99932419@N07'
     });
+}
+
+function loadCommentSection() {
+
+    $('div.comment-container').comment({
+        title: 'Comments',
+        url_get: 'articles/id/1/comments/list',
+        url_input: 'articles/id/1/comments/input',
+        url_delete: 'articles/id/1/comments/delete',
+        limit: 10,
+        auto_refresh: false,
+        refresh: 10000,
+        transition: 'slideToggle',
+    });
+
+}
+
+function start() {
+}
+
+$(document).ready(function () {
+    loadImageLibrary();
+    loadCommentSection();
 });
+
+

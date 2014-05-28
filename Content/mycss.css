@@ -23,15 +23,40 @@
     padding-top: 15px;
     border-left:1px solid #ddd;
     border-right:1px solid #ddd;
+    border-bottom: 1px solid #ddd;  
+}
+
+#avatar-container {
+    width:inherit;
+    height:auto;
+        
+}
+
+lower-comment-section {
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom: 1px solid #ddd;  
 }
 
 /*TABS*/
 .flat-nav-tabs{
-   border:none;   
+   border-bottom:none;
+   border-top: 1px solid #ddd;   
 }
 
-    .flat-nav-tabs > li > a {
-        border-radius:0;
+    .flat-nav-tabs li a {
+        border-radius:0 !important;
+        border-bottom:0;
+        border-top:0;
+        border-right:solid 1px #ddd;
+        margin-right:0px;
+    }
+
+    .flat-nav-tabs li.active a {
+        border-radius:0 !important;
+        border-color:none !important;
+        background-color:transparent !important;
+        border-top:0;
     }
 
 
@@ -59,4 +84,5 @@ div#view-info h2,h4{
     display:inline-block;
 }
 /*AVATAR SECTION*/
+
 /*JOURNEY PAGE*/
