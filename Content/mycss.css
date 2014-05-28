@@ -15,25 +15,48 @@
     margin: 0;
 }
 
+
+
 /*LOWER SECTION*/
-#lower-section {
-    padding-top: 15px
+
+#lower-section-content {
+    padding-top: 15px;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
 }
-/*LOWER SECTION*/
 
 /*TABS*/
+.flat-nav-tabs{
+   border:none;   
+}
 
-/*TABS*/
+    .flat-nav-tabs > li > a {
+        border-radius:0;
+    }
 
 
 /*AVATAR SECTION*/
 section#avatar-section div,img{
     display:inline-block;    
+    vertical-align:top;
 }
 
 section#avatar-section {
     width:400px;
     height:auto;
+}
+
+div#right-text{
+margin-left:10px;
+}
+
+div#media-button-container {
+    width:400px;
+    height:auto;
+}
+
+div#view-info h2,h4{
+    display:inline-block;
 }
 /*AVATAR SECTION*/
 /*JOURNEY PAGE*/
