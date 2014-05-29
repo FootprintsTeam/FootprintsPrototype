@@ -21,7 +21,7 @@ window.onload = loadScript;
 function loadImageLibrary() {
     jQuery("#media-container").nanoGallery({
         kind: 'flickr',
-        userID: '99932419@N07'
+        userID: '99932419@N07'       
     });
 }
 
