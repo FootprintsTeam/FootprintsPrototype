@@ -40,8 +40,7 @@ function loadCommentSection() {
 
 }
 
-function start() {
-}
+$('.dropdown-toggle').dropdown();
 
 $(document).ready(function () {
     loadImageLibrary();
