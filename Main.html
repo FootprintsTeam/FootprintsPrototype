@@ -15,6 +15,59 @@
     <!-- Pinterest CSS -->
     <link rel="stylesheet" href="Content/slidecss/style.css">
     <link rel="stylesheet" href="Content/slidecss/animation.css">
+    <style type="text/css">
+    .col-3{
+        width:280px;
+        float:left;
+        position:relative;
+    }
+    .col-3-content{
+        margin:10px;
+        border:2px solid #FFF;
+    }
+    .col-3-content:hover{
+        border:2px solid #c0c0c0;
+    }
+    .col-3-content img{
+        width:256px;
+        height:150px;
+        opacity: 1;
+    }
+    .col-3-content:hover img{
+        opacity: 0.8;
+        cursor:pointer;
+    }
+    .col-3-content h2{
+        height:25px;
+        line-height:25px;
+        padding-left:10px;
+        margin:0px;
+        font-size:15px;
+        overflow:hidden;
+        margin-top:10px;
+    }
+    .col-3-content div.description{
+        height:48px;
+        line-height:24px;
+        padding-left:10px;
+        margin:0px;
+        font-size:12px;
+        color:#666;
+        overflow:hidden;
+    }
+    .col-3-content a{
+        text-decoration: none;        
+    }
+    .col-3-content div.icon{ 
+        text-align: right;        
+        line-height:25px;
+        padding:0px;
+        margin:5px;
+        font-size:13px;
+        overflow:hidden;        
+    }
+    </style>
+
 </head>
 <body>
     <!--Navigation Bar-->
@@ -59,130 +112,123 @@
 <div class="wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div id="largeImage" class="largeContainer"></div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội - Bangkok</h2>
+                        <div class="description">Những ngày không thể quên được</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội- Sài Gòn</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
+                    
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Thái Lan- Campuchia</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
+                    
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội- Sài Gòn</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
+                    
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội- Sài Gòn</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
 
-                <div id="main">
-                    <ul id="tiles">
-                        <!-- grid thumbnails -->
-                        <li data-large="Content/images/lychee/img1.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/lychee/img1.jpg" width="200" height="134" />
-                                <p>Short image caption.</p>				
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>								
-                            </div>
-                        </li>
-                        <li data-large="Content/images/lychee/img3.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/lychee/img3.jpg" width="200" height="298" />				
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>												
-                            </div>
-                        </li>		
-                        <li data-type="video" data-large="http://player.vimeo.com/video/31215588?title=0&amp;byline=0&amp;portrait=0" data-width="960" data-height="480">
-                            <div class="front">
-                                <img src="Content/images/thumbs/vimeo.jpg" width="200" height="133">				
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>								
-                            </div>			
-                        </li>
-                        <li data-large="Content/images/lychee/img2.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/lychee/img2.jpg"  width="200" height="134" /><p><strong>Optional front and back div container</strong><br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>								
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																
-                            </div>
-                        </li>
-                        <li data-large="Content/images/lychee/img4.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/lychee/img4.jpg" width="200" height="298" />
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																				
-                            </div>
-                        </li>
-                        <li data-large="Content/images/lychee/img6.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/lychee/img6.jpg" width="200" height="134" />
-                            </div>	
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																
-                            </div>
-                        </li>
-                        <li data-large="Content/images/lychee/img7.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/lychee/img7.jpg" width="200" height="298" />
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																
-
-                            </div>
-                        </li>
-
-                        <li data-large="Content/images/flickr_images/img3.jpg">
-                            <img src="Content/images/thumbs/flickr_images/img3.jpg" width="200" height="133" />
-                        </li>
-                        <li data-large="Content/images/flickr_images/img4.jpg">
-                            <img src="Content/images/thumbs/flickr_images/img4.jpg" width="200" height="300" />
-                        </li>
-                        <li data-large="Content/images/flickr_images/img5.jpg">
-                            <img src="Content/images/thumbs/flickr_images/img5.jpg" width="200" height="133" />
-                        </li>
-                        <li data-type="video" data-large="http://www.youtube.com/embed/Dbs504zDN6I?rel=0" data-width="800" data-height="420">
-                            <div class="front">
-                                <img src="Content/images/thumbs/y2.jpg" width="200" height="141">				
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>								
-                            </div>			
-                        </li>		
-                        <li>
-                            <div class="info front" style="width:200px;height:120px">
-                                <h4>Put the text on front</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																
-                            </div>			
-                            <div class="back">
-                                <img src="Content/images/thumbs/lychee/img8_120.jpg" width="200" height="120" />				
-                            </div>
-                        </li>
-
-                        <li data-large="Content/images/flickr_images/img28.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/flickr_images/img28.jpg" width="200" height="133" />				
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																
-                            </div>
-                        </li>
-                        <li data-large="Content/images/flickr_images/img30.jpg">
-                            <img src="Content/images/thumbs/flickr_images/img30.jpg" width="200" height="133" />
-                        </li>
-                        <li data-large="Content/images/flickr_images/img31.jpg">
-                            <div class="front">
-                                <img src="Content/images/thumbs/flickr_images/img31.jpg" width="200" height="133" />				
-                            </div>
-                            <div class="back">
-                                <h4>Image Caption</h4>				
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>																
-                            </div>
-
-                        </li>
-                    </ul>
-
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội- Sài Gòn</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
+                    
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội- Sài Gòn</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
+                    
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3-content">
+                    <a href="JourneyPage.html">
+                        <div class="image"><img src="Content/images/1.jpg" /></div>
+                        <h2>Hà Nội- Sài Gòn</h2>
+                        <div class="description">Unforgetable Memory</div>
+                    </a>
+                    <div class="icon">                            
+                        <span class="glyphicon glyphicon-thumbs-up">50</span>
+                        <span class="glyphicon glyphicon-comment">50</span>                    
+                        <span class="glyphicon glyphicon-picture">20</span>
+                    </div> 
+                    
                 </div>
             </div>
         </div>
@@ -195,23 +241,5 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="Scripts/jquery-1.9.1.min.js"></script>
         <script src="Scripts/bootstrap.min.js"></script>
-        <script src="Scripts/jquery.wookmark.min.js" type="text/javascript"></script>
-        <script src="Scripts/jquery.pinterestgallery.min.js" type="text/javascript"></script>
-        <script src="Scripts/modernizr.custom.js" type="text/javascript"></script>	
-
-        <script type="text/javascript">
-        $(document).ready(new function() {
-            $('#tiles').pinterestGallery({
-                largeContainerID: 'largeImage',
-                animateStyle: 'twirl',
-                gridOptions: {
-                    autoResize: true,
-                    container: $('#main'),
-                    offset: 8,
-                    itemWidth: 200
-                }
-            });
-        });
-        </script>
     </body>
     </html>
