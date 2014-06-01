@@ -26,7 +26,7 @@ body {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    background-color: #fff;    
+    background-color: #fff;
 }
 
 #avatar-container {
@@ -86,20 +86,33 @@ div#media-button-container {
 
 div#view-info h2, h4 {
     display: block;
-    vertical-align:top;
+    vertical-align: top;
     margin-top: 10px;
 }
 
 div#seperate-line {
     border-bottom: 1px solid #ddd;
     padding: 10px 0px 10px 0px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-div#comment-section{
-    height:500px;
+div#comment-section {
+    height: 500px;
 }
 /*AVATAR SECTION*/
 
 /*JOURNEY PAGE*/
+
+
+/*WELCOME PAGE*/
+div.main-theme {
+    height: 1200px;
+    width: 100%;
+    position: relative;    
+    background: url(beach-footprints.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
