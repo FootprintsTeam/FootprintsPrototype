@@ -8,6 +8,10 @@ html, body {
    font-family:'Open Sans',arial,sans-serif;
 }
 
+.container {
+	width: 1000px;
+}
+
 @font-face {
     font-family: 'MyriadPro-Bold';
     src: url('../fonts/myriadprobold.eot');
@@ -75,7 +79,7 @@ a {
 
 .column {
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     *zoom:1;
 }
 
@@ -330,7 +334,11 @@ small.text-muted {
   position: absolute;
   top: 260px;
 }
+.avatar a {
+  text-decoration: none;
+}
 .avatar img{
+  float: left;
   width: 160px;
   height: 160px;
   margin-left: 15px;
@@ -344,6 +352,13 @@ small.text-muted {
   -ms-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
   -o-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
   box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+.avatar a p{
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  padding-top: 50px;
+  padding-left: 185px;
 }
 
 .left-content-title {
@@ -365,11 +380,10 @@ small.text-muted {
 }
 .left-content-body {
   background-color: #fff;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
-.left-content-wrapper,.main-content-wrapper {
-  min-width: 270px;
-}
+
 .photo-album a {
   position: relative;
 }
@@ -384,7 +398,6 @@ small.text-muted {
 .photo-album img{
   width: 32%;
   padding-bottom: 3px;
-  min-width: 90px;
   position: relative;
   z-index: 0;
 }
@@ -407,6 +420,9 @@ small.text-muted {
   margin: 0 12px;
   padding: 10px 0;
 }
+.left-info-wrapper.last {
+  border-bottom:hidden;
+}
 .infoIcon {
   width: 20px;
   height: 20px;
@@ -424,6 +440,7 @@ small.text-muted {
   border-radius: 3px 3px 0 0;
   line-height: normal;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .main-content-title img {
   width: 42px;
@@ -450,6 +467,9 @@ small.text-muted {
   color: #898F9C;
   margin-top: -10px;
 }
+.main-content-image-caption {
+  padding-bottom: 10px;
+}
 .main-content-journey-image {
   text-align: center;
   border-left: 1px solid #D3D6DB;
@@ -471,4 +491,28 @@ small.text-muted {
 .post-wrapper {
   border: 1px solid #D3D6DB;
   margin-bottom: 15px;
+}
+.post a {
+  color: #3B5998;
+}
+.comment-section .comment ul {
+  list-style-type: none;
+}
+.comment-section .comment ul li p{
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+.comment-section .comment ul li a{
+  font-weight: 600;
+  margin-left: 10px;
+}
+.comment-time{
+  margin-left: 10px;
+  color: #898F9C;
+}
+.comment-image {
+  width: 35px;
+  height: 35px;
+  display: table-column;
+  float: left;
 }
