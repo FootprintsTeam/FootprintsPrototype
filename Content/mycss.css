@@ -47,21 +47,21 @@ lower-comment-section {
     background-color: #fff;
 }
 
-    .flat-nav-tabs li a {
-        border-radius: 0 !important;
-        border-bottom: 0;
-        border-top: 0;
-        border-right: solid 1px #ddd;
-        margin-right: 0px;
-    }
+.flat-nav-tabs li a {
+    border-radius: 0 !important;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: solid 1px #ddd;
+    margin-right: 0px;
+}
 
-    .flat-nav-tabs li.active a {
-        border-radius: 0 !important;
-        border-left: none !important;
-        border-bottom: 3px solid red;
-        background-color: transparent !important;
-        border-top: 0;
-    }
+.flat-nav-tabs li.active a {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-bottom: 3px solid red;
+    background-color: transparent !important;
+    border-top: 0;
+}
 
 
 /*AVATAR SECTION*/
@@ -115,4 +115,210 @@ div.main-theme {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/*TOOLTIP CSS*/
+.marker-overlay
+{
+    cursor: pointer;
+}
+.marker-image
+{
+    line-height: 0;
+    moz-transition: all 400ms ease-out;
+    ms-transition: all 400ms ease-out;
+    o-transition: all 400ms ease-out;
+    position: relative;
+    top: 0;
+    transition: all 400ms ease-out;
+    webkit-transition: all 200ms ease;
+    z-index: 2;
+}
+.marker-image:hover
+{
+    moz-transition: all 400ms ease-out;
+    ms-transition: all 400ms ease-out;
+    o-transition: all 400ms ease-out;
+    top: -5px;
+    transition: all 400ms ease-out;
+    webkit-transition: all 200ms ease;
+    z-index: 4;
+}
+.marker-image > img
+{
+    border-radius: 83px;
+    box-shadow: 0 0 0 4px #ffffff,0 0 1px 4px rgba(0,0,0,0.2);
+    webkit-border-radius: 83px;
+}
+.marker-image:before
+{
+    border: 5px solid transparent;
+    border-top-color: #ffffff;
+    border-width: 12px 18px 0;
+    content: "";
+    height: 0;
+    left: 20px;
+    position: absolute;
+    top: 76px;
+    width: 0;
+    z-index: 1;
+}
+.marker-image:after
+{
+    background: url('http://preview.ait-themes.com/touroperator/wp1/wp-content/themes/touroperator/design/img/marker-image-shadow.png');
+    content: "";
+    height: 25px;
+    left: -37px;
+    position: absolute;
+    top: 80px;
+    width: 150px;
+}
+.marker-holder
+{
+    height: 10px;
+    left: 0;
+    position: relative;
+    width: 10px;
+}
+.marker-content
+{
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    bottom: -141px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05),0 2px 4px -1px rgba(0,0,0,0.3),0 1px 0 0 rgba(0,0,0,0.1);
+    left: -63px;
+    position: absolute;
+    width: 220px;
+    z-index: 5;
+}
+.map-item-info
+{
+    padding: 3px 10px 6px 10px;
+}
+.with-image .map-item-info
+{
+    text-align: center;
+}
+.map-item-info .title
+{
+    border-bottom: 1px dotted #dcdcdc;
+    color: #333333;
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+}
+.map-item-info .desc
+{
+    color: #333333;
+    font-size: 11px;
+}
+.marker-content img
+{
+    moz-transition: all 400ms ease-out;
+    ms-transition: all 400ms ease-out;
+    opacity: 1;
+    o-transition: all 400ms ease-out;
+    position: relative;
+    transition: all 400ms ease-out;
+}
+.marker-content img:before
+{
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.marker-content .arrow
+{
+    background: url('http://preview.ait-themes.com/touroperator/wp1/wp-content/themes/touroperator/design/img/map-pin-description.png') no-repeat;
+    bottom: -21px;
+    height: 22px;
+    left: 28px;
+    position: absolute;
+    width: 37px;
+}
+.marker-content .close
+{
+    background: #ffffff url('http://preview.ait-themes.com/touroperator/wp1/wp-content/themes/touroperator/design/img/map-icon/pop_up-close.png') no-repeat center;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    cursor: pointer;
+    height: 10px;
+    margin: auto;
+    padding: 4px;
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    width: 10px;
+    z-index: 1000;
+}
+.marker-content:before
+{
+    border: 12px solid transparent;
+    border-top-color: #ffffff;
+    bottom: -28px;
+    content: "";
+    height: 0;
+    left: 96px;
+    position: absolute;
+    width: 0;
+}
+.marker-content:hover .map-item-info a.more-button
+{
+    display: inline-block;
+    moz-transition: all 900ms ease-out;
+    ms-transition: all 900ms ease-out;
+    opacity: 1;
+    o-transition: all 900ms ease-out;
+    transition: all 900ms ease-out;
+}
+.marker-content:hover img
+{
+    moz-transition: all 400ms ease-out;
+    ms-transition: all 400ms ease-out;
+    opacity: 0.2;
+    o-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+}
+.map-item-info a.more-button
+{
+    background: #207dda;
+    background: -moz-linear-gradient(#207dda,#1e75cd);
+    background: -o-linear-gradient(#207dda,#1e75cd);
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#207dda),to(#1e75cd));
+    background: -webkit-linear-gradient(#207dda,#1e75cd);
+    border: 1px solid #1d70c4;
+    box-shadow: 0 1px 0 #4091e3 inset;
+    color: #ffffff;
+    display: none;
+    font-size: 10px;
+    font-weight: bold;
+    left: 64px;
+    moz-transition: all 900ms ease-out;
+    ms-transition: all 900ms ease-out;
+    opacity: 0;
+    o-transition: all 900ms ease-out;
+    padding: 3px 10px;
+    position: absolute;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #17599c;
+    top: 69px;
+    transition: all 900ms ease-out;
+}
+.map-item-info a.more-button:hover
+{
+    background: #1b69b6;
+    background: -moz-linear-gradient(#207dda,#1b69b6);
+    background: -o-linear-gradient(#207dda,#1b69b6);
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#207dda),to(#1b69b6));
+    background: -webkit-linear-gradient(#207dda,#1b69b6);
+    border: 1px solid #1963ae;
+    box-shadow: 0 1px 0 #569ee6 inset;
+    display: inline-block;
+    text-shadow: 1px 1px 0 #144d86;
 }
