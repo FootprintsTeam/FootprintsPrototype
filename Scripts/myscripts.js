@@ -1,4 +1,4 @@
-
+﻿
 // var map;
 // google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -141,8 +141,82 @@
 
 function loadImageLibrary() {
     jQuery("#media-container").nanoGallery({
-        kind: 'flickr',
-        userID: '99932419@N07'
+        thumbnailWidth: 'auto',
+        thumbnailHeight: 200,
+        items: [{
+            src: '../Images/sample/4.jpg', // image
+            srct: '../Images/sample/4.jpg', // thumbnail
+            title: 'image 1', // title
+            description: 'chuyến đi đến sapa' // description
+        }, {
+            src: '../Images/sample/4.jpg',
+            srct: '../Images/sample/4.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/5.jpg',
+            srct: '../Images/sample/5.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/9.jpg',
+            srct: '../Images/sample/9.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/4.jpg',
+            srct: '../Images/sample/4.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/5.jpg',
+            srct: '../Images/sample/5.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/9.jpg',
+            srct: '../Images/sample/9.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/4.jpg',
+            srct: '../Images/sample/4.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/5.jpg',
+            srct: '../Images/sample/5.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/9.jpg',
+            srct: '../Images/sample/9.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/4.jpg',
+            srct: '../Images/sample/4.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/5.jpg',
+            srct: '../Images/sample/5.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/9.jpg',
+            srct: '../Images/sample/9.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/4.jpg',
+            srct: '../Images/sample/4.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/5.jpg',
+            srct: '../Images/sample/5.jpg',
+            title: 'chuyến đi đến sapa'
+        }, {
+            src: '../Images/sample/9.jpg',
+            srct: '../Images/sample/9.jpg',
+            title: 'chuyến đi đến sapa'
+        }],
+        colorScheme:'dark',
+        thumbnailLabel: {
+            display: false,
+            position: 'overImageOnBottom'
+        },
+        thumbnailHoverEffect: 'labelAppear75,borderDarker',
+        thumbnailLabel : {display:true,position:'overImageOnMiddle'},
+        theme: 'light'
     });
 }
 
