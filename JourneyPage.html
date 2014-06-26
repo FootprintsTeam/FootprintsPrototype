@@ -83,19 +83,19 @@
                     <div class="tabbable">
                         <div class="tab-content">
                             <!--Map Content-->
-                            <div class="tab-pane active" id="map-tab">
+                            <div class="tab-pane" id="map-tab">
                                 <div id="map-canvas"></div>
                             </div>
                             <!--Media Content-->
-                            <div class="tab-pane" id="media-tab">
-                                <div id="media-container"></div>
+                            <div class="tab-pane active" id="media-tab">                                 
+                                    <div id="media-container" style="overflow: scroll; background-color:black"></div>                                
                             </div>
                         </div>
                         <!--tab nav bar-->
                         <div class="nav nav-tabs flat-nav-tabs">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#map-tab" data-toggle="tab"><b>Map</b> <span class="glyphicon glyphicon glyphicon-map-marker"></span></a></li>
-                                <li><a href="#media-tab" data-toggle="tab"><b>Media</b> <span class="glyphicon glyphicon glyphicon-picture"></span></a></li>
+                                <li><a href="#map-tab" data-toggle="tab"><b>Map</b> <span class="glyphicon glyphicon glyphicon-map-marker"></span></a></li>
+                                <li class="active"><a href="#media-tab" data-toggle="tab"><b>Media</b> <span class="glyphicon glyphicon glyphicon-picture"></span></a></li>
                             </ul>
                         </div>
                         <!--tab content-->
@@ -166,7 +166,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <!--Google Maps API Plugin-->
+    <script src="Scripts/imagesloaded.pkgd.min.js"></script>
+<!--Google Maps API Plugin-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENqxOk_1aIxTllx-AMHYsaCRdoNQ8fJU&sensor=SET_TO_TRUE_OR_FALSE"
             type="text/javascript"></script>
 
@@ -174,10 +175,10 @@
     <script type="text/javascript" src="Scripts/third.party/hammer.js/hammer.min.js"></script>
 
     <!-- Add nanoGALLERY plugin files (MANDATORY) -->
-    <link href="Content/nanogallery.css" rel="stylesheet" type="text/css">
+    <link href="Content/nanogallery.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="Scripts/jquery.nanogallery.js"></script>
-
-    <!--My javascript-->
+    <link href="Content/themes/light/nanogallery_light.css" rel="stylesheet" type="text/css" />
+     <!--My javascript-->
     <script type="text/javascript" src="Scripts/myscripts.js"></script>
 
     <!--jQuery Comment Add-->
